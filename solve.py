@@ -39,7 +39,6 @@ if __name__ == '__main__':
 
     parser.add_argument(
         '--downloads-directory',
-        dest='downloads_directory',
         action='store',
         help='the directory where your rosalind downloads end up'
     )
