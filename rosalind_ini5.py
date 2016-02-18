@@ -1,14 +1,8 @@
 def main(input):
     lines = input.split("\n")
-    result = []
-    length = len(lines)
-    for i in range(0, length):
-        if i % 2 == 1:
-            result.append(lines[i])
-        else:
-            pass
+    results = [lines[i] for i in range(len(lines)) if i % 2]
         
     print "-" * 10    
-    for line in result:
-        print line
+    for line in results:
+        print line 
     print "-" * 10 
