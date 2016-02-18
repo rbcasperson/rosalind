@@ -4,7 +4,5 @@ def main(input):
         try:
             results[word] += 1
         except:
-            results[word] = 1
-            
-    for k, v in results.items():
-        print "%s %d" % (k, v)
+            results[word] = 1       
+    return '\n'.join(["%s %d" % (k, v) for k, v in results.items()])
