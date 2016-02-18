@@ -1,11 +1,10 @@
 def main(input):
-    words = input.split()
     results ={}
-    for word in words:
+    for word in input.split():
         try:
             results[word] += 1
         except:
             results[word] = 1
             
-    for k in results:
-        print "%s %d" % (k, results[k])
+    for k, v in results.items():
+        print "%s %d" % (k, v)
