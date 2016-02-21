@@ -26,7 +26,7 @@ The answer should post directly to the command line.
 
 ```
 $> cd ~/code/py/rosalind
-$> python solve.py rosalind_ini3 --downloads_directory=~/Desktop
+$> python solve.py ini3 --downloads_directory=~/Desktop
 ```
 
 My rosalind text files downloaded to my desktop, so I pass in that argument here.
