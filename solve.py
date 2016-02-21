@@ -34,7 +34,7 @@ if __name__ == '__main__':
     parser.add_argument(
         'problem_name',
         action='store',
-        help='the name of the file you downloaded for this problem, minus the extension'
+        help='the name of the file you downloaded for this problem, minus the extension and rosalind_'
     )
 
     parser.add_argument(
@@ -44,7 +44,8 @@ if __name__ == '__main__':
     )
 
     args = parser.parse_args()
-    rosalind_solver = importlib.import_module(args.problem_name)
-    rosalind_input = grab_input(args.problem_name + '.txt', args.downloads_directory)
+    problem_name = 'rosalind_' + args.problem_name
+    rosalind_solver = importlib.import_module(problem_name)
+    rosalind_input = grab_input(problem_name + '.txt', args.downloads_directory)
 
     print rosalind_solver.main(rosalind_input)
