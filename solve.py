@@ -1,5 +1,6 @@
 import os.path
 
+
 def grab_input(rosalind_problem_name, downloads_directory):
     """
     Opens a text file representing rosalind input to solve a problem.
