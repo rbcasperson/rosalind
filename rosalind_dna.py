@@ -1,4 +1,4 @@
-def main(input):
+def main(data):
     from collections import Counter
-    results = Counter(input)
+    results = Counter(data)
     return " ".join(map(str, [results["A"], results["C"], results["G"], results["T"]]))
