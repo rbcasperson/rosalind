@@ -18,7 +18,7 @@ In that file, create a function called `main`.
 
 ```py
 def main(data):
-    """ I am the input from the text file. Split, slice, do whatever to solve the problem. """
+    """ I am the data from the text file. Split, slice, do whatever to solve the problem. """
     pass
 ```
 
