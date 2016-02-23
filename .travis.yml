@@ -1,2 +1,2 @@
 language: python
-script: flake8 * .py
+script: flake8 *.py
