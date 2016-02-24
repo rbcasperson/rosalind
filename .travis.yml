@@ -3,3 +3,8 @@ script:
     - flake8 *.py
     - flake8 ./tests/*.py
     - nosetests -v
+notifications:
+    email: false
+    slack:
+        on_success: change
+        on_failure: always
