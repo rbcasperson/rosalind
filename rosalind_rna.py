@@ -1,2 +1,2 @@
-def main(input):
-    return input.replace("T", "U")
+def main(data):
+    return data.replace("T", "U")

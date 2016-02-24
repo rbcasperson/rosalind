@@ -17,8 +17,8 @@ Create a new file that has the same name as the text file you just downloaded.
 In that file, create a function called `main`.
 
 ```py
-def main(input):
-    """ I am the input from the text file. Split, slice, do whatever to solve the problem. """
+def main(data):
+    """ I am the data from the text file. Split, slice, do whatever to solve the problem. """
     pass
 ```
 
