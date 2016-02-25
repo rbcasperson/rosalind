@@ -1,5 +1,5 @@
 def main(data):
-    a, b = data.split('\n')
+    a, b = data[:-1].split('\n')
     hamm_dist = 0
     for i in range(len(a)):
         if a[i] != b[i]:
