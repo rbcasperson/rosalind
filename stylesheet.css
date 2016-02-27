@@ -1,3 +1,46 @@
-h1 {
-    color: green;
+* {
+    box-sizing: inherit;
+}
+body {
+    background-color: #e0e9eb;
+    margin: 0px auto;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Georgia;
+    min-width: 900px;
+    max-width: 1000px;
+}
+
+#bar {
+    height: 50px;
+    text-align: center;
+    color: #447884;
+    border-bottom: 1px solid #447884;
+}
+h3 {
+    text-align: center;
+    margin: 30px 0;
+}
+p {
+    margin-left: 50px;
+}
+#content {
+    margin: 10px 50px;
+}
+.solutions {
+    min-height: 180px;
+    width: 800px;
+    margin: 0px;
+    list-style-type: none;
+}
+.solutions li {
+    width: 170px;
+    float: left;
+    margin: 10px;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #447884;
+    border-radius: 15px;
+    background-color: #68a4b1;
 }
