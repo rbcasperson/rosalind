@@ -22,6 +22,9 @@ body {
     color: #447884;
     text-decoration: none;
 }
+#title:hover {
+    color: #345c65;
+}
 h3 {
     text-align: center;
     color: #233d43;
