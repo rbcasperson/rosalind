@@ -1,5 +1,3 @@
-# replace PROBLEM on lines 4, 8, and 9
-
 from nose.tools import assert_equal
 from rosalind.rosalind_subs import main
 
