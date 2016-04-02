@@ -6,17 +6,10 @@ def main(data):
     consensus = "".join([Counter(column).most_common(1)[0][0] for column in columns])
     data = {'A': '', 'C': '', 'G': '', 'T': ''}
 
-    for i, column in enumerate(columns):
+    for column in columns:
+        data['A'] += ' ' + str(Counter(column)['A'])
+        data['C'] += ' ' + str(Counter(column)['C'])
+        data['G'] += ' ' + str(Counter(column)['G'])
+        data['T'] += ' ' + str(Counter(column)['T'])
 
-        if i != 0:
-            data['A'] += ' '
-            data['C'] += ' '
-            data['G'] += ' '
-            data['T'] += ' '
-
-        data['A'] += str(Counter(column)['A'])
-        data['C'] += str(Counter(column)['C'])
-        data['G'] += str(Counter(column)['G'])
-        data['T'] += str(Counter(column)['T'])
-
-    return '%s\nA: %s\nC: %s\nG: %s\nT: %s' % (consensus, data['A'], data['C'], data['G'], data['T'])
+    return '%s\nA:%s\nC:%s\nG:%s\nT:%s' % (consensus, data['A'], data['C'], data['G'], data['T'])
