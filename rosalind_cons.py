@@ -7,6 +7,7 @@ def main(data):
     data = {'A': '', 'C': '', 'G': '', 'T': ''}
 
     for i, column in enumerate(columns):
+
         if i != 0:
             data['A'] += ' '
             data['C'] += ' '
