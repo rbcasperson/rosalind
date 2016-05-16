@@ -12,4 +12,4 @@ def main(data):
         data['G'] += ' ' + str(Counter(column)['G'])
         data['T'] += ' ' + str(Counter(column)['T'])
 
-    return '%s\nA:%s\nC:%s\nG:%s\nT:%s' % (consensus, data['A'], data['C'], data['G'], data['T'])
+    return "{0}\nA:{1}\nC:{2}\nG:{3}\nT:{4}".format(consensus, data['A'], data['C'], data['G'], data['T'])
