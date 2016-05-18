@@ -1,0 +1,6 @@
+>Rosalind_1234
+GATTACA
+>Rosalind_2345
+TAGACCA
+>Rosalind_3456
+ATACA
